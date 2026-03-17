@@ -139,6 +139,19 @@ const educationInfo = {
         "Member of the Association for Information Systems, BYU Developers Club",
         "Relevant Courses: Business Programming (C#/.NET), Database Systems (SQL), Enterprise Web Development (React/ASP.NET), Data Communications, Machine Learning (Python), Information Security"
       ]
+    },
+    {
+      schoolName: "Ensign College",
+      logo: require("./assets/images/nextuLogo.webp"),
+      logoPosition: "center",
+      logoScale: 1,
+      subHeader: "Associate of Science - Software Engineering",
+      duration: "Apr 2024",
+      desc: "Ensign College, Salt Lake City, UT",
+      descBullets: [
+        "GPA: 4.00",
+        "Relevant Courses: Intro to Computer Programming (Java), Object-Oriented Programming, Web Development (JavaScript), Mobile Platform Development (Dart)"
+      ]
     }
   ]
 };

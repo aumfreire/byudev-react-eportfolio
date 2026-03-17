@@ -1,12 +1,11 @@
 {
   "files": {
     "main.css": "/byudev-react-eportfolio/static/css/main.a7f2df05.css",
-    "main.js": "/byudev-react-eportfolio/static/js/main.1b7004c8.js",
+    "main.js": "/byudev-react-eportfolio/static/js/main.978fa19a.js",
     "static/css/487.bfac3b0d.chunk.css": "/byudev-react-eportfolio/static/css/487.bfac3b0d.chunk.css",
     "static/js/487.253957c0.chunk.js": "/byudev-react-eportfolio/static/js/487.253957c0.chunk.js",
     "static/css/990.24e6fd7f.chunk.css": "/byudev-react-eportfolio/static/css/990.24e6fd7f.chunk.css",
     "static/js/990.e31d24c4.chunk.js": "/byudev-react-eportfolio/static/js/990.e31d24c4.chunk.js",
-    "static/media/stanfordLogo.png": "/byudev-react-eportfolio/static/media/stanfordLogo.5a8e3a0a00949c93a9b8.png",
     "static/media/chessScreenshot.png": "/byudev-react-eportfolio/static/media/chessScreenshot.5267328a75bdb84088fd.png",
     "static/media/Montserrat-Regular.ttf": "/byudev-react-eportfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/byuMedallionNavy.png": "/byudev-react-eportfolio/static/media/byuMedallionNavy.d4fbdbe109bebccdcfc3.png",
@@ -26,7 +25,7 @@
     "index.html": "/byudev-react-eportfolio/index.html",
     "static/media/talksCardBack.svg": "/byudev-react-eportfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.a7f2df05.css.map": "/byudev-react-eportfolio/static/css/main.a7f2df05.css.map",
-    "main.1b7004c8.js.map": "/byudev-react-eportfolio/static/js/main.1b7004c8.js.map",
+    "main.978fa19a.js.map": "/byudev-react-eportfolio/static/js/main.978fa19a.js.map",
     "487.bfac3b0d.chunk.css.map": "/byudev-react-eportfolio/static/css/487.bfac3b0d.chunk.css.map",
     "487.253957c0.chunk.js.map": "/byudev-react-eportfolio/static/js/487.253957c0.chunk.js.map",
     "990.24e6fd7f.chunk.css.map": "/byudev-react-eportfolio/static/css/990.24e6fd7f.chunk.css.map",
@@ -34,6 +33,6 @@
   },
   "entrypoints": [
     "static/css/main.a7f2df05.css",
-    "static/js/main.1b7004c8.js"
+    "static/js/main.978fa19a.js"
   ]
 }

@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Deploy to GitHub Pages
 env:
   CI: false
   GITHUB_USERNAME: ${{ github.repository_owner }}
@@ -13,14 +13,22 @@ on:
       - master
   schedule:
      - cron: "0 12 * * 1" # see https://docs.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
-        with:
-          persist-credentials: false
 
       - name: Setup Node.js 🔧
         uses: actions/setup-node@v4
@@ -34,9 +42,18 @@ jobs:
         run: |
           npm install
           npm run build
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
+
+      - name: Upload Pages artifact 📦
+        uses: actions/upload-pages-artifact@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }} # This is provided by GitHub.
-          branch: gh-pages # The branch the action should deploy to.
-          folder: build # The folder the action should deploy.
+          path: ./build
+
+  deploy:
+    environment:
+      name: github-pages
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages 🚀
+        id: deployment
+        uses: actions/deploy-pages@v4

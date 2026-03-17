@@ -142,7 +142,7 @@ const educationInfo = {
     },
     {
       schoolName: "Ensign College",
-      logo: require("./assets/images/nextuLogo.webp"),
+      logo: require("./assets/images/ensignCollege.png"),
       logoPosition: "center",
       logoScale: 1,
       subHeader: "Associate of Science - Software Engineering",
